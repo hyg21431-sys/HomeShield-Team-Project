@@ -1,2 +1,2 @@
-# HomeShield-Team-Project
-국비 팀 프로젝트
+# TeamProject
+국비 팀 프로젝트 - 홈 쉴드
