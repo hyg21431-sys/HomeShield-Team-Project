@@ -1,17 +1,18 @@
 package home.dao;
 
 import home.dto.MapDTO;
+
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
-import java.util.List;
-
 @Mapper
 public interface MapDAO {
 
-    @Select("SELECT * FROM lease WHERE house_type = 'APT'") 
+    @Select("SELECT * FROM lease WHERE house_type = 'APT'")
     List<MapDTO> selectAptList();
 
     @Select("SELECT * FROM lease WHERE house_type = 'OP'") 
